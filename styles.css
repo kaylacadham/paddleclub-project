@@ -1,0 +1,503 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #F4F6F6;
+    margin: 0;
+    font-family: 'Archivo Narrow', sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 4.5rem;
+}
+
+h2 {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: .02em;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 1.35rem;
+    letter-spacing: .02em;
+    font-weight: lighter;
+}
+
+h4 {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 1rem;
+    letter-spacing: .02em;
+    font-weight: lighter;
+}
+
+h5 {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: .825rem;
+    letter-spacing: .02em;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+h6 {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: .7rem;
+    letter-spacing: .02em;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+a {
+    color:#32A2A6;
+}
+
+section {
+        scroll-margin-top: 6rem;
+    }
+
+/*Header Styles*/
+header {
+    box-sizing: border-box;
+    width: 100%;
+    height: 6rem;
+    margin: 0;
+    padding: 0 1rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f6f6;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.logo {
+    height: 80%;
+    width: auto;
+}
+
+nav {
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+
+nav li {
+    padding: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    text-underline-offset: .5em;
+    color:#1A1826;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/*Hero Section Styles*/
+.hero {
+    width: 100%;
+    height: 90vh;
+    background-image: url(./images/dani-on-howe-sound.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+    color: #fff;
+}
+
+.hero .container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero .content {
+    margin: 0 15%;
+}
+
+.hero h1 {
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    text-transform: none;
+    margin-top: 0;
+}
+
+button {
+    background-color: rgba(50, 162, 166, 0.5);
+    border: 1px solid #3decf2;
+    border-radius: 1rem;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1.1rem;
+    transition: background-color 0.5s ease;
+}
+
+button:hover {
+    background-color: #32A2A6;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #32A2A6;
+    cursor: pointer;
+}
+
+/*About Section Styles*/
+#about {
+    background-color: #32A2A6;
+    color: #f4f6f6;
+}
+
+#about .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+#about .box{
+    flex: 1;
+}
+
+#about p {
+    line-height: 2;
+}
+
+#about img {
+    max-width: 100%;
+    height: 100%;
+    border: 5px solid white;
+    box-sizing: border-box;
+    object-fit: cover;
+    object-position: center center;
+}
+
+/*Events Section Styles*/
+#events {
+    background-color: #F2AE30;
+    color: #1A1826;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#resources .sectionheading {
+    flex: 0;
+}
+#events .container {
+    flex: 1;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 0 3rem;
+}
+
+#events .box {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1;
+    padding: 0;
+    margin: .5rem 0;
+    justify-content: center;
+    align-items: stretch;
+    overflow: hidden;
+    min-height: 200px;
+    background-color: #fff;
+}
+
+#events .content {
+    flex: 1;
+}
+
+#events .content.right {
+    padding: 1em;
+    padding-top: 0;
+    background-color: #fff;
+    flex-grow: 2;
+}
+
+#events img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Resource Section Styles*/
+#resources {
+    background-color: #32A2A6;
+    color: #1A1826;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#resources .sectionheading {
+    flex: 0;
+}
+
+#resources .container {
+    flex: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}
+
+#resources .box {
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+#resources .box .content {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#resources .box.one {
+    background-image: url(./images/paddling-routes.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 5px solid white;
+    margin: .5rem 1rem;
+}
+
+#resources .box.two {
+    background-image: url(./images/pfd.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 5px solid white;
+    margin: .5rem 1rem;
+}
+
+#resources .box.three {
+    background-image: url(./images/boat-storage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 5px solid white;
+    margin: .5rem 1rem;
+}
+
+/*Contact Section Styles*/
+#contact {
+    position: relative;
+    min-height: 50vh;
+    background-image: url(./images/chief.jpg);
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:#F4F6F6;
+    padding: 0;
+}
+
+#contact .container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* padding: 0 3rem; */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+
+#contact ul {
+    list-style-type:none;
+    padding-left: 0;
+}
+
+.companyname {
+    font-family: 'Archivo Black', sans-serif;
+    text-align: center;
+}
+
+/*Footer Styles*/
+
+footer {
+    /* padding: 1rem; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: #1A1826;
+    color:#F4F6F6;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline-block;
+    padding: 1em;
+}
+
+footer a {
+    color:#F4F6F6;
+}
+
+/*Mobile*/
+@media only screen and (max-width: 425px) {
+    .desktopmenu {
+        display: none;
+    }
+
+    .hero {
+        height: 50vh;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero h2 {
+        font-size: 1rem;
+    }
+
+    .sectionheading {
+        text-align: center;
+    }
+
+    #about .box.left {
+        display: none;
+    }
+
+    #events .container {
+        padding: 1em;
+    }
+
+    #events .box {
+        flex-flow: column wrap;
+        gap: 0;
+    }
+
+    #resources {
+        min-height: 0;
+        padding-bottom: 2rem;
+    }
+
+    footer {
+        font-size: .8rem;
+    }
+}
+
+/*Tablet*/
+@media only screen and (min-width: 425px) and (max-width: 768px){
+    .mobilemenu {
+        display: none;
+    }
+
+    .hero h1 {
+        font-size: 3.25rem;
+    }
+
+    .hero h2 {
+        font-size: 1.75rem;
+    }
+
+    #about .box.left {
+        display: none;
+    }
+
+    #resources, #events, #about {
+        padding: 10% 10%;
+        padding-bottom: 15%;
+    }
+
+    #events .box {
+        flex-flow: column wrap;
+        gap: 0;
+    }
+
+    .sectionheading {
+        text-align: center;
+    }
+}
+
+/*Desktop*/
+@media only screen and (min-width: 769px) {
+    .mobilemenu {
+        display: none;
+    }
+    
+    .sectionheading {
+        padding: 0 3rem;
+    }
+
+    #about .container {
+        flex-flow: row nowrap;
+        justify-content: center;
+        gap: 1;
+    }
+
+    #about .box {
+        flex: 1;
+    }
+
+    #about .box.right {
+        padding: 3rem;
+        padding-right: 5rem;
+    }
+
+    #events{
+        min-height: 90vh;
+        padding: 5% 20% 5%;
+    }
+
+    #events .box {
+        flex: 1 1 0; 
+    }
+
+    #resources {
+        min-height: 50vh;
+        padding: 5% 5% 10%;
+    }
+
+    #resources .container {
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+    }
+}
+
+/*Wider Desktop*/
+@media only screen and (min-width: 2000px) {
+    html {
+        font-size: 24px;
+    }
+    
+    header {
+        padding: 0 20%;
+    }
+}
